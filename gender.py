@@ -11,7 +11,6 @@ def fill_gender_db(names, db):
     url = ""
     cnt = 0
     for name in names:
-        print name
         if url == "":
             url = "name[0]=" + name
         else:
