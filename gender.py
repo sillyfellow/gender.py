@@ -34,7 +34,7 @@ def parse_json_item_to_db(item, db):
                   float(item["probability"]), int(item["count"])]
     else:
         values = [name, u'None', u'0.0', 0.0]
-        db[name.encode('latin_1')] = values
+    db[name.encode('latin_1')] = values
 
 
 def chunks(l, n):
